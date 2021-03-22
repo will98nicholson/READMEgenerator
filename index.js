@@ -36,6 +36,10 @@ const questions = [
         message: "Please provide test instructions for your application."
     }
 ];
+inquirer
+    .prompt(questions).then((response) =>
+        response.confirm === response.input
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
