@@ -8,28 +8,28 @@ const questions = [
         type: "input",
         name: "title",
         message: "What is the title of this project?"
-    }
+    },
 
     {
         type: "input",
         name: "Description",
         message: "Please provide a description of your project."
-    }
+    },
     {
         type: "input",
         name: "Installation Instructions",
         message: "Please provide instructions for how this application is to be installed."
-    }
+    },
     {
         type: "input",
         name: "Usage Information",
         message: "Please provide information on how users should be using this application."
-    }
+    },
     {
         type: "input",
         name: "Contribution Guidelines",
         message: "Please provide any contribution guidelines you wish to be included"
-    }
+    },
     {
         type: "input",
         name: "Test Instructions",
@@ -39,6 +39,13 @@ const questions = [
 inquirer
     .prompt(questions).then((response) =>
         response.confirm === response.input
+            ? console.log("logged")
+            : console.log('error')
+    );
+
+
+fs.appendFile('README.md', `${process.argv[2]}\n`
+);
 
 
 // TODO: Create a function to write README file
