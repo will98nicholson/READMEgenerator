@@ -64,6 +64,9 @@ function init() {
             response.confirm === response.input
                 ? console.log("logged")
                 : console.log('error')
+            fs.appendFile('README.md', `${process.argv[2]}\n`
+            );
+
         });
 
 }
