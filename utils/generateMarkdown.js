@@ -1,10 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { }
+function renderLicenseBadge(license) {
+    //![Crates.io](https://img.shields.io/crates/l/will98nicholson)
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) {
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -13,7 +16,7 @@ function renderLicenseSection(license) { }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `${data.title}
-
+    
     ## Table of Contents:
     - Description
     - Installation
@@ -27,6 +30,7 @@ function generateMarkdown(data) {
     ${data.Description}
     
     ## Installation 
+
     ${data.Installation}
 
     ## Usage Information
@@ -38,10 +42,16 @@ function generateMarkdown(data) {
     ${data.Contribution}
 
     ## Test Instructions 
+
     ${data.Tests}
 
     ## Questions
-    Github : https://${data.questions}.github.io/hw2/
+
+    Github : https://github.com/${data.questions}
+
+    Additional questions? You can reach me at:
+
+    ${data.Email}
 
 
     
