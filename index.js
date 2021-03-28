@@ -29,13 +29,23 @@ const questions = [
     },
     {
         type: "input",
-        name: "Contribution Guidelines",
+        name: "Contribution",
         message: "Please provide any contribution guidelines you wish to be included"
     },
     {
         type: "input",
-        name: "Test Instructions",
+        name: "Tests",
         message: "Please provide test instructions for your application."
+    },
+    {
+        type: "list",
+        name: "license",
+        choices: ['Apache License 2.0', 'MIT', 'none']
+    },
+    {
+        type: "input",
+        name: "questions",
+        message: "what is your github username?"
     }
 ];
 
