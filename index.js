@@ -50,8 +50,9 @@ const questions = [
 
 
 
-fs.appendFile('README.md', `${process.argv[2]}\n`
-);
+// fs.appendFile('README.md', `${process.argv[2]}\n`
+// );
+
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data)
 }
@@ -59,11 +60,11 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-        .then(response) => {
-        response.confirm === response.input
-            ? console.log("logged")
-            : console.log('error')
-    };
+        .then(response => {
+            response.confirm === response.input
+                ? console.log("logged")
+                : console.log('error')
+        });
 
 }
 
