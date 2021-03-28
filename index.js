@@ -80,6 +80,10 @@ function init() {
             writeToFile('README.me', markDown)
 
         })
+    // .then(response => {
+    //     const markDownL = renderLicenseLink(response);
+    //     writeToFile('README.me', markDownL)
+    // })
 }
 
 // Function call to initialize app

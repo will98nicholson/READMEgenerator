@@ -6,7 +6,12 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseLink(data) {
+    if (data.license === 'Apache License 2.0')
+        return "![Crates.io](https://img.shields.io/crates/l/will98nicholson)"
+    else if (data.license === 'MIT')
+        return "![GitHub](https://img.shields.io/github/license/will98nicholson/GenREADME)"
+    else return "no license"
 }
 
 // TODO: Create a function that returns the license section of README
@@ -16,7 +21,7 @@ function renderLicenseSection(license) { }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `${data.title}
-    
+
     ## Table of Contents:
     - Description
     - Installation
@@ -60,3 +65,4 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+module.exports = renderLicenseLink;
