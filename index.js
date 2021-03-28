@@ -56,11 +56,13 @@ inquirer.prompt(questions).then((response) =>
 
 fs.appendFile('README.md', `${process.argv[2]}\n`
 );
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName, data)
+}
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt()
+
 }
 
 // Function call to initialize app
