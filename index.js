@@ -61,14 +61,14 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
         .then(response => {
-            response.confirm === response.input
-                ? console.log("logged")
-                : console.log('error')
-            fs.appendFile('README.md', `${process.argv[2]}\n`
-            );
+            const markDown = generateMarkdown(response);
 
-        });
+            // ?console.log("logged")
+            // : console.log('error')
+            // fs.appendFile(`README.md', response`)
+            writeToFile('README.me', markDown)
 
+        })
 }
 
 // Function call to initialize app
