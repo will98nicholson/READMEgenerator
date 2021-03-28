@@ -47,11 +47,7 @@ const questions = [
 
 
 // TODO: Create a function to write README file
-inquirer.prompt(questions).then((response) =>
-    response.confirm === response.input
-        ? console.log("logged")
-        : console.log('error')
-);
+
 
 
 fs.appendFile('README.md', `${process.argv[2]}\n`
@@ -62,6 +58,12 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
+    inquirer.prompt(questions)
+        .then(response) => {
+        response.confirm === response.input
+            ? console.log("logged")
+            : console.log('error')
+    };
 
 }
 
