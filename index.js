@@ -19,12 +19,12 @@ const questions = [
     },
     {
         type: "input",
-        name: "Installation Instructions",
+        name: "Installation",
         message: "Please provide instructions for how this application is to be installed."
     },
     {
         type: "input",
-        name: "Usage Information",
+        name: "Usage",
         message: "Please provide information on how users should be using this application."
     },
     {
