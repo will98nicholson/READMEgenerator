@@ -68,50 +68,50 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `
-    # ${data.title}
-    ${renderLicenseBadge(data.license)}
+# ${data.title}
+${renderLicenseBadge(data.license)}
 
-    ## Table of Contents:
-    [Description](#Description)\n
-    [Installation](#Installation)\n
-    [Usage information](#Usage-Information)\n
-    [Contributors](#Contributors)\n
-    [Test Instructions](#Test-Instructions)\n
-    [Questions](#Questions)\n
+## Table of Contents:
+[Description](#Description)\n
+[Installation](#Installation)\n
+[Usage information](#Usage-Information)\n
+[Contributors](#Contributors)\n
+[Test Instructions](#Test-Instructions)\n
+[Questions](#Questions)\n
 
-    ## Description
+## Description
 
-    ${data.Description}
-    
-    ## Installation 
+${data.Description}
 
-    ${data.Installation}
+## Installation 
 
-    ## Usage Information
+${data.Installation}
 
-    ${data.Usage}
+## Usage Information
 
-    ## Contributing
+${data.Usage}
 
-    ${data.Contribution}
+## Contributing
 
-    ## Test Instructions 
+${data.Contribution}
 
-    ${data.Tests}
+## Test Instructions 
 
-    ## License
-    ${renderLicenseSection(data.license)}
+${data.Tests}
 
-    ## Questions
+## License
+${renderLicenseSection(data.license)}
 
-    Github : https://github.com/${data.questions}
+## Questions
 
-    Additional questions? You can reach me at:
+Github : https://github.com/${data.questions}
 
-    ${data.Email}
+Additional questions? You can reach me at:
+
+${data.Email}
 
 
-    
+
 
 `;
 }
