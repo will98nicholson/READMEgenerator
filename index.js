@@ -77,7 +77,7 @@ function init() {
             // ?console.log("logged")
             // : console.log('error')
             // fs.appendFile(`README.md', response`)
-            writeToFile('README.me', markDown)
+            writeToFile('README.md', markDown)
 
         })
     // .then(response => {
