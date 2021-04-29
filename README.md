@@ -17,6 +17,6 @@ Node.js, Javascript, Inquirer
 
 ### Links
 Github Repository:
-[githubRepository]  https://github.com/will98nicholson/GenREADME
+[githubRepository]  https://github.com/will98nicholson/READMEgenerator
 Video Walkthough:
 [videoWalkthough]  https://drive.google.com/file/d/1FF6-UWp2n0ylsGPsiheWFYOzM6UeMHuG/view
